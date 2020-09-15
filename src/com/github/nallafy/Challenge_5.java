@@ -32,24 +32,37 @@ NOTE: Do not add a  main method to solution code.
 
  */
 
+
 public class Challenge_5 {
 
-    public static void shouldWakeUp(boolean Barking, int hourOfDay){
-        boolean result;
-        if(hourOfDay < 0 || hourOfDay > 23){
-        result = false;
-            System.out.println(result);
-        }else{
-            result = Barking && hourOfDay < 8 ? true : false;
-            System.out.println(result);
+
+    public static class shouldWakeUp{
+
+
+        public static void Proceed(boolean Barking, int hourOfDay){
+            boolean result;
+            if(hourOfDay < 0 || hourOfDay > 23){
+                result = false;
+                System.out.println(result);
+            }else{
+                result = Barking && hourOfDay < 8 ? true : false;
+                System.out.println(result);
+            }
+
         }
 
     }
+
     public static void main(String[] args){
-        shouldWakeUp(true, 1);
-        shouldWakeUp(false, 2);
-        shouldWakeUp(true, 8);
-        shouldWakeUp(true, -1);
+        shouldWakeUp x = new shouldWakeUp();
+        x.Proceed(true, 1);
+        x.Proceed(false, 2);
+        x.Proceed(true, 8);
+        x.Proceed(true, -1);
+        //  shouldWakeUp(true, 1);
+        // shouldWakeUp(false, 2);
+        // shouldWakeUp(true, 8);
+        // shouldWakeUp(true, -1);
 
     }
 }
