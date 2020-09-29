@@ -39,9 +39,13 @@ public class Car extends Vehicle{
         this.currentGear = currentGear;
         System.out.println("Car.changeCurrentGear(): Changed to " + this.currentGear);
     }
+    public int getCurrentGear() {
+        return this.currentGear;
+    }
 
-    @Override
-    public void movement(int velocity, int direction) {
+
+
+    public void changeMovement(int velocity, int direction) {
         super.movement(velocity, direction);
         System.out.println("Car.changeMovement(): Velocity:"  + velocity + " at Direction: " + direction);
     }
