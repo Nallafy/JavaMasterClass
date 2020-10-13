@@ -2,7 +2,7 @@ package com.github.nallafy;
 
 public class methodOverload {
     public static int calculateScore(String playerName, int score){
-        System.out.println("Player" + playerName + " scored " + score + " points");
+        System.out.println("Player " + playerName + " scored " + score + " points");
         return score * 1000;
     }
 
@@ -11,7 +11,8 @@ public class methodOverload {
         return score * 1000;
     }
     public static void main(String[] args){
-        calculateScore("Tim", 500);
+        calculateScore("Shawn", 100)  ;
+        calculateScore(500);
     }
 
 }
